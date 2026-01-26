@@ -25,7 +25,7 @@ class Game:
             self.score+=1000
         self.score+=move_down_points
     def get_random_block(self):
-        if not len(self.blocks)==0:
+        if len(self.blocks)==0:
             self.blocks=[IBlock(),JBlock(),LBlock(),OBlock(),SBlock(),TBlock(),ZBlock()]
         block=random.choice(self.blocks)
         self.blocks.remove(block)

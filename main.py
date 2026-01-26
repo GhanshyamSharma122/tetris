@@ -14,7 +14,7 @@ pygame.display.set_caption('python tetris')
 clock=pygame.time.Clock()
 game=Game()
 GAME_UPDATE=pygame.USEREVENT
-pygame.time.set_timer(GAME_UPDATE,500)
+pygame.time.set_timer(GAME_UPDATE,300)
 while True:
     for event in  pygame.event.get():
         if event.type==pygame.QUIT:
